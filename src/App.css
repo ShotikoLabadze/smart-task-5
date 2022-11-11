@@ -5,3 +5,21 @@ body {
   margin: 0;
   margin-right: 20px;
 }
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.owner {
+  flex: 1;
+  flex-basis: 1e-9px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo img {
+  border-radius: 50%;
+  display: flex;
+}

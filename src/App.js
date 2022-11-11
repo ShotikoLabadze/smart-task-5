@@ -14,6 +14,7 @@ function App() {
     width: 100%;
     background: #272727;
     border-radius: 25px;
+    margintop: 10px;
     color: white;
     padding: 1px 5px;
   `;
@@ -21,6 +22,13 @@ function App() {
     <div className="App">
       <Youtube videoId="n4RjJKxsamQ" />
       <Title>Scorpions - Wind Of Change (Official Music Video)</Title>
+      <div className="row">
+        <div className="owner">
+          <div className="logo">
+            <img src={logo} />
+          </div>
+        </div>
+      </div>
       <About>
         <h4>983,128,108 views Nov 1, 2009</h4>
         <p>
