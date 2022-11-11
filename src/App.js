@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import styled from "styled-components";
+import Youtube from "./components/Youtube";
+import logo from "./assets/logo.jpg";
 
 function App() {
+  const Title = styled.h1`
+    font-size: 1.2em;
+    width: 100%;
+    height: 20px;
+    color: white;
+  `;
+  const About = styled.div`
+    width: 100%;
+    background: #272727;
+    border-radius: 25px;
+    color: white;
+    padding: 1px 5px;
+  `;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <Youtube videoId="n4RjJKxsamQ" />
+      <Title>Scorpions - Wind Of Change (Official Music Video)</Title>
+      <About>
+        <h4>983,128,108 views Nov 1, 2009</h4>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          REMASTERED IN HD! Official Music Video for Wind Of Change performed by
+          Scorpions.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </About>
     </div>
   );
 }
